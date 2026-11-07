@@ -5,13 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hephaestus Forge Lab</title>
 <meta name="description" content="Hephaestus Forge Lab is an independent game studio making Hand of History, a medieval life simulation.">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="canonical" href="https://hephaestusforgelab.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Hephaestus Forge Lab">
 <meta property="og:title" content="Hephaestus Forge Lab">
 <meta property="og:description" content="An independent game studio making Hand of History, a medieval life simulation.">
 <meta property="og:url" content="https://hephaestusforgelab.com/">
+<meta property="og:image" content="https://hephaestusforgelab.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Hephaestus Forge Lab logo – a hooded smith with an axe and a scythe">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@HephForgeLab">
 <meta name="theme-color" content="#241c15">
 <style>
   :root {
@@ -57,15 +65,47 @@
   .page { max-width: 680px; margin: 0 auto; padding: 56px 16px 40px; }
 
   .brand { text-align: center; margin-bottom: 32px; }
-  .anvil { width: 64px; height: auto; color: var(--ember); }
-  .studio {
-    margin: .4rem 0 0;
-    font-size: .95rem;
-    font-weight: 700;
-    letter-spacing: .22em;
+  .logo {
+    display: block;
+    width: min(260px, 70vw);
+    height: auto;
+    margin: 0 auto;
+    border: 6px solid var(--wood);
+    box-shadow: inset 0 0 0 1px var(--wood-hi), 0 16px 34px -14px rgba(0, 0, 0, .55);
+    background: #0c0c0c;
+  }
+  .tagline { margin: .8rem 0 0; color: var(--ink-soft); font-style: italic; font-size: .95rem; }
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+  }
+
+  .social { margin-top: 40px; text-align: center; }
+  .social h2 {
+    margin: 0 0 .7rem;
+    font-size: .85rem;
+    letter-spacing: .2em;
     text-transform: uppercase;
   }
-  .tagline { margin: .2rem 0 0; color: var(--ink-soft); font-style: italic; font-size: .95rem; }
+  .social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem;
+  }
+  .social a {
+    display: inline-block;
+    padding: .4rem .9rem;
+    border: 2px solid var(--wood);
+    background: var(--paper);
+    color: var(--ink);
+    font-size: .95rem;
+    text-decoration: none;
+  }
+  .social a:hover { border-color: var(--ember); color: var(--ember); }
 
   .card {
     background: var(--paper);
@@ -163,11 +203,8 @@
 <body>
 <main class="page">
   <header class="brand">
-    <!-- Placeholder mark: replace with your own logo when you have one. -->
-    <svg class="anvil" viewBox="0 0 64 40" aria-hidden="true" focusable="false">
-      <path fill="currentColor" d="M2 9c8 1 13-1 17-4h43v8l-13 3-4 8 8 6v6H15v-6l8-6-3-8C11 16 5 14 2 9z"/>
-    </svg>
-    <p class="studio">Hephaestus Forge Lab</p>
+    <img class="logo" src="logo.jpg" width="560" height="560" alt="Hephaestus Forge Lab logo – a hooded smith with an axe and a scythe">
+    <p class="sr-only">Hephaestus Forge Lab</p>
     <p class="tagline">An independent game studio</p>
   </header>
 
@@ -196,6 +233,18 @@
     <h2 id="contact-title">Contact</h2>
     <p>Press, business, or just a hello:</p>
     <p><a id="mail" class="mail" href="#">contact [at] hephaestusforgelab.com</a></p>
+  </section>
+
+  <section class="social" aria-labelledby="social-title">
+    <h2 id="social-title">Follow the forge</h2>
+    <ul>
+      <li><a href="https://www.youtube.com/@HephaestusForgeLab" rel="me noopener" target="_blank">YouTube</a></li>
+      <li><a href="https://www.tiktok.com/@hephaestusforgelab" rel="me noopener" target="_blank">TikTok</a></li>
+      <li><a href="https://www.instagram.com/hephaestusforgelab/" rel="me noopener" target="_blank">Instagram</a></li>
+      <li><a href="https://x.com/HephForgeLab" rel="me noopener" target="_blank">X</a></li>
+      <li><a href="https://www.reddit.com/user/HephaestusForgeLab/" rel="me noopener" target="_blank">Reddit</a></li>
+      <li><a href="https://hephaestusforgelab.itch.io/" rel="me noopener" target="_blank">itch.io</a></li>
+    </ul>
   </section>
 
   <footer>&copy; 2026 Hephaestus Forge Lab</footer>

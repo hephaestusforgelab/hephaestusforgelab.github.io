@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hephaestus Forge Lab</title>
-<meta name="description" content="Hephaestus Forge Lab is an independent game studio making Hand of History, a medieval life simulation.">
+<meta name="description" content="Hephaestus Forge Lab is an independent game studio making Hand of History, a medieval solo / colony life simulation.">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="favicon-48.png" sizes="48x48" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -12,7 +12,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Hephaestus Forge Lab">
 <meta property="og:title" content="Hephaestus Forge Lab">
-<meta property="og:description" content="An independent game studio making Hand of History, a medieval life simulation.">
+<meta property="og:description" content="An independent game studio making Hand of History, a medieval solo / colony life simulation.">
 <meta property="og:url" content="https://hephaestusforgelab.com/">
 <meta property="og:image" content="https://hephaestusforgelab.com/og-image.jpg">
 <meta property="og:image:width" content="1200">
@@ -61,7 +61,6 @@
     box-shadow: inset 0 0 0 1px var(--wood-hi), 0 16px 34px -14px rgba(0, 0, 0, .55);
     background: #0c0c0c;
   }
-  .tagline { margin: .8rem 0 0; color: var(--ink-soft); font-style: italic; font-size: .95rem; }
   .sr-only {
     position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
     overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
@@ -152,6 +151,34 @@
   }
   .button:hover { background: var(--wood-hi); }
 
+  .community { margin-top: 1.4rem; padding-top: 1.2rem; border-top: 1px solid var(--line); }
+  .community-label {
+    margin: 0 0 .6rem;
+    font-size: .8rem;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .community ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .6rem; }
+  .community a {
+    display: inline-block;
+    padding: .55rem 1.2rem;
+    background: var(--wood);
+    color: #f5ecd6;
+    border: 2px solid var(--wood-hi);
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .community a:hover { background: var(--wood-hi); border-color: var(--ember); }
+  .updated {
+    margin: 1.6rem 0 0;
+    text-align: right;
+    font-size: .72rem;
+    font-style: italic;
+    color: var(--ink-soft);
+    opacity: .6;
+  }
+
   .contact { margin-top: 44px; text-align: center; }
   .contact h2 {
     margin: 0 0 .3rem;
@@ -192,28 +219,41 @@
   <header class="brand">
     <img class="logo" src="logo.jpg" width="560" height="560" alt="Hephaestus Forge Lab logo – a hooded smith with an axe and a scythe">
     <p class="sr-only">Hephaestus Forge Lab</p>
-    <p class="tagline">An independent game studio</p>
   </header>
 
   <section class="card" aria-labelledby="game-title">
     <p class="kicker">Now in development</p>
     <h1 id="game-title">Hand of History</h1>
-    <p class="lead">A medieval life simulation where you begin as nobody.</p>
+    <p class="lead">A medieval solo / colony life simulation</p>
     <p>
       Every person in the village lives a life of their own: they work, eat, argue,
-      make friends, fall in love and remember what you did. You control only yourself.
-      Become a smith, a farmer, a soldier or an outlaw &mdash; or earn enough trust
-      to lead the village one day. Prefer to guide everyone at once? Play it as a colony sim instead.
+      make friends, fall in love and remember what you did.
+    </p>
+    <p>
+      <strong>Play solo</strong> and you control only yourself. Start with nothing, learn a trade,
+      become a smith, a farmer, a soldier or an outlaw &mdash; or earn enough trust to lead
+      the village one day. <strong>Play as a colony sim</strong> and guide the whole settlement at once.
     </p>
     <ul class="features">
-      <li><strong>A world that lives without you.</strong> Villages, lords and bandits go on whether you are watching or not.</li>
-      <li><strong>Start with nothing.</strong> Find a place, build a shelter, survive, meet people.</li>
+      <li><strong>A world that lives without you.</strong> Villages, lords and bandits go on whether you are watching or not. Choose where to settle on a world of forests, plains and mountains.</li>
+      <li><strong>Start with nothing.</strong> Find a place, build a shelter, survive your first winter, meet people.</li>
       <li><strong>Every person has a story.</strong> Needs, traits, friendships and grudges shape what happens next.</li>
+      <li><strong>Trades and homes that grow.</strong> Workshops live inside houses that grow room by room. Mine ore and climb from copper to bronze, iron and steel.</li>
+      <li><strong>Seasons that matter.</strong> Summer heat and winter cold, clothing, harvests and food that spoils.</li>
+      <li><strong>Law, war and power.</strong> Courts, titles, bandit raids, village militias and battles with hundreds of soldiers.</li>
     </ul>
     <p class="soon">Coming to Steam.</p>
     <!-- When the Steam page is live, replace the line above with:
     <a class="button" href="https://store.steampowered.com/app/APP_ID/">Wishlist on Steam</a>
     -->
+    <div class="community">
+      <p class="community-label">Join the Hand of History community</p>
+      <ul>
+        <li><a href="https://discord.gg/NqqShTNy8z" rel="noopener" target="_blank">Discord</a></li>
+        <li><a href="https://www.reddit.com/r/HandOfHistory/" rel="noopener" target="_blank">r/HandOfHistory</a></li>
+      </ul>
+    </div>
+    <p class="updated">Description last updated <time datetime="2026-11-25">25 November 2026</time></p>
   </section>
 
   <section class="contact" aria-labelledby="contact-title">
